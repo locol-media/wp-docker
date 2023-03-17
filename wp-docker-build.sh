@@ -16,7 +16,7 @@ if [ "$CONTAINER_TAG" = "NOW" ]
 
 sudo docker build \
  --build-arg UPLOAD_SIZE=${UPLOAD_SIZE} \
- --build-arg APACHE_SERVER_ADMIN=admin@dummyaccount.abcdef \
+ --build-arg APACHE_SERVER_ADMIN=admin@dummyaccount.com \
  --build-arg WORDPRESS_FILES=${WORK_DIR}/tempwpfiles/ \
  -t ${CONTAINER_REGISTRY}/${CONTAINER_NAME}:latest \
  -t ${CONTAINER_REGISTRY}/${CONTAINER_NAME}:${CONTAINER_TAG} \
